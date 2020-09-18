@@ -1,7 +1,7 @@
 {
   "name": "omgswap-v2-subgraph",
   "version": "1.0.0",
-  "repository": "https://github.com/omgswap/omggraphv2",
+  "repository": "https://github.com/omgswap/Omggraphv2",
   "license": "GPL-3.0-or-later",
   "scripts": {
     "codegen": "graph codegen --output-dir src/types/",
