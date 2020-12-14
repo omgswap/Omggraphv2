@@ -4,9 +4,9 @@ import { BigDecimal, Address, BigInt } from '@graphprotocol/graph-ts/index'
 import { ZERO_BD, factoryContract, ADDRESS_ZERO, ONE_BD } from './helpers'
 
 const WETH_ADDRESS = '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
-const USDC_WETH_PAIR = '0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc' // created 10008355
-const DAI_WETH_PAIR = '0xa478c2975ab1ea89e8196811f51a7b7ade33eb11' // created block 10042267
-const USDT_WETH_PAIR = '0x0d4a11d5eeaac28ec3f61d100daf4d40471f1852' // created block 10093341
+const USDC_WETH_PAIR = '0x6122fc570f429e7cfb901fd3a6b8d197f5f4cff6' // usdcweth
+const DAI_WETH_PAIR = '0x18e249b6ff08a5abde41de4615d18178c0e53746' // daiweth
+const USDT_WETH_PAIR = '0xd9538b22cd06f5a303898c8f5df6b4191f08497c' // created block 10093341
 
 // dummy for testing
 export function getEthPriceInUSD(): BigDecimal {
@@ -54,11 +54,11 @@ let WHITELIST: string[] = [
   '0xc00e94cb662c3520282e6f5717214004a7f26888', // COMP
   '0x514910771af9ca656af840dff83e8264ecf986ca', //LINK
   '0xF4c17Bc4979c1dc7b4CA50115358Dec58C67fD9d', //OPM
-  '0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f', //SNX
+  '0x9bde098be22658d057c3f1f185e3fd4653e2fbd1', //KP2R
  ]
 
 // minimum liquidity required to count towards tracked volume for pairs with small # of Lps
-let MINIMUM_USD_THRESHOLD_NEW_PAIRS = BigDecimal.fromString('400000')
+let MINIMUM_USD_THRESHOLD_NEW_PAIRS = BigDecimal.fromString('1000')
 
 // minimum liquidity for price to get tracked
 let MINIMUM_LIQUIDITY_THRESHOLD_ETH = BigDecimal.fromString('2')
